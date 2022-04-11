@@ -1,0 +1,21 @@
+<html>
+<head>
+   <title> 4 </title>
+</head>
+<body>
+    <canvas id="myCanvas" width="300" height="250"></canvas>
+    <script>
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+
+      context.beginPath();	  
+      context.moveTo(200, 150);
+      context.lineTo(-100, -100);
+      context.lineWidth = 10;
+
+      context.strokeStyle = "blue";
+      context.stroke();
+    </script>
+  
+</body>
+</html>

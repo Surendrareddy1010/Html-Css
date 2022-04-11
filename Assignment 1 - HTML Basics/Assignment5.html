@@ -1,0 +1,25 @@
+<html>
+<head>
+     <title>5</title>
+	 <script>
+			function clickContent(){
+				new Date();
+				if(typeof(Storage)!== "undefined"){
+					if(localStorage.scontent){
+						localStorage.scontent = localStorage.scontent+ "<tr><td>"+new Date()+"</td></tr>";
+					}else{
+						localStorage.scontent = "<tr><td>"+new Date()+"</td></tr>";
+					}
+					document.getElementById("result").innerHTML = "<table>"+localStorage.scontent+"</table>";
+				}else{
+					document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage";
+				}
+			}
+		</script>
+</head>
+<body>
+   <p><button onclick="clickContent()" type="button">Click Here </button></p>
+	<div id="result"></div>
+	<p>click the  Above button to see the result.</p>
+</body>
+</html>

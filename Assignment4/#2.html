@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    Assignment3-1
+  </title>
+  <script>
+    function func() {
+      var clr = document.getElementById("clr").value;
+      document.getElementById("pid").style.color = clr;
+    }
+  </script>
+</head>
+
+<body>
+  <label for="color">Select color and observe the below paragraph </label><input type="color" name="color" id="clr" onchange="func()">
+  <p id="pid">This is a demo paragraph</p>
+</body>
+
+</html>

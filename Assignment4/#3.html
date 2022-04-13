@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script>
+    var arr = [12, 13, 14, 7, 15, 16]
+
+    function arrayf() {
+      for (var i = 0; i < arr.length; i++) {
+        prime(arr[i]);
+      }
+    }
+
+    function prime(i) {
+      var count = 0;
+      for (var num = 1; num <= i; num++) {
+        if (i % num == 0) {
+          count += 1;
+        }
+      }
+      if (count == 2) {
+        console.log("prime number : " + i);
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <button onclick="arrayf()">Click </button><p style="display:inline">&nbsp;to see the list of primes in console</p>
+  
+</body>
+
+</html>
